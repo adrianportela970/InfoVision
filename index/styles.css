@@ -1,0 +1,232 @@
+@media (min-width:800px) {
+
+    body {
+        align-items: center;
+        background-color: #000000;
+        margin: 0;
+    }
+
+    .sidebar {
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 90px;
+        background-color: rgba(0, 0, 0, 1);
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .tituloinfovision {
+        color: #fff;
+        display: flex;
+        min-width: 15rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img2 {
+        padding-top: 15px;
+        padding-right: 15px;
+    }
+
+    div img {
+        border-radius: 2rem;
+
+    }
+
+    .div1 {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15%;
+        padding-right: 15%;
+        gap: 2.5%;
+        max-height: 250px;
+
+    }
+
+    .closebtn {
+        color: #111;
+    }
+
+    .links {
+        display: flex;
+        gap: 1rem;
+        color: #fff;
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        padding-right: 4rem;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .closebtn {
+        display: none;
+    }
+
+    .img_index {
+        width: 100vw;
+        height: 60vh;
+        object-fit: cover;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        filter: brightness(50%);
+    }
+
+    .logo-ifv {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nossosdif {
+        align-items: end;
+        justify-content: space-between;
+        text-align: center;
+
+    }
+
+    .teste {
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .descdif1 {
+        display: flex;
+        justify-content: space-between;
+        max-width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .descdif {
+        display: flex;
+        flex: 1;
+    }
+
+    .diferenciais {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descdif div {
+            flex: 1;
+            border: 1px solid #000;
+            text-align: center;
+            padding: 20px;
+          
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:799px) {
+
+    body {
+        font-family: "Lato", sans-serif;
+        background-color: #000000;
+        margin: 0%;
+    }
+
+    .menu-icon {
+        font-size: 30px;
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 999;
+        color: #fff;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 888;
+    }
+
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+
+    body h1 {
+        text-align: center;
+        margin-top: 3rem;
+        color: #fff;
+    }
+
+    .teste {
+        color: #fff;
+    }
+
+    .logo-ifv {
+        display: none;
+    }
+
+    .img_index {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100vw;
+        height: 40vh;
+        object-fit: cover;
+        filter: brightness(50%);
+
+    }
+
+}
