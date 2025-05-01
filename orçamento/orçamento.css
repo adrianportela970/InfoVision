@@ -273,13 +273,24 @@ h4 {
     color: #444;
     margin-bottom: 10px;
 }
-input, select, textarea {
+input, textarea {
     width: 90%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
+
 }
+
+select {
+    width: 99%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
 textarea {
     resize: vertical;
 }
