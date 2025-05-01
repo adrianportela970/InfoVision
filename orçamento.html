@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoVision</title>
+  <script src="orçamento/orçamento.js"></script>
+  <link rel="stylesheet" href="orçamento/orçamento.css">
+  
+
+</head>
+
+<body>
+  <div>
+    
+  <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">&#9776;</div>
+  <div id="sidebar" class="sidebar">
+
+    <div class="tituloinfovision">
+      <img class="logo-ifv" src="img\img-infovision.png" alt="logo da nossa empresa infovision">
+      <h1>InfoVision</h1>
+    </div>
+    <div class="links">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+      <a href="index.html">
+        <li>Início</li>
+      </a>
+      <a href="revenda\revenda.html">
+        <li>Revenda de Celulares</li>
+      </a>
+      <a href="orçamento\orçamento.html">
+        <li>Orçamento Automático</li>
+      </a>
+    </div>
+  </div>
+    <div class="div_form">
+    <div class="form-container">
+      <h4>Solicitação de Conserto de Celular</h4>
+      <form onsubmit="enviarDados(event)">
+          <div class="question-group">
+              <label>Nome:</label>
+              <input type="text" name="nome" placeholder="Ex: João Silva Oliveira" required>
+          </div>
+          <div class="question-group">
+              <label>Email:</label>
+              <input type="email" name="email" placeholder="Ex: example@gmail.com" required>
+          </div>
+          <div class="question-group">
+              <label>Selecione a marca do celular:</label>
+              <select name="marca" required>
+                  <option value="">Selecione a marca</option>
+                  <option value="Apple">Apple</option>
+                  <option value="Samsung">Samsung</option>
+                  <option value="Xiaomi">Xiaomi</option>
+                  <option value="Motorola">Motorola</option>
+                  <option value="Outra">Outra</option>
+              </select>
+          </div>
+          <div class="question-group">
+              <label>Modelo do celular:</label>
+              <input type="text" name="modelo" placeholder="Ex: iPhone 13, Galaxy S22, Xiaomi Redmi Note 10" required>
+          </div>
+          <div class="question-group">
+              <label>Qual serviço você precisa?</label>
+              <input type="text" name="servico" placeholder="Ex: Troca de tela, conserto de bateria, problema na câmera" required>
+          </div>
+          <div class="question-group">
+              <label>Você mora em Ribeirão Preto?</label>
+              <select name="ribeirao_preto" required>
+                  <option value="">Selecione uma opção</option>
+                  <option value="Sim">Sim</option>
+                  <option value="Não">Não</option>
+              </select>
+          </div>
+          <div class="question-group">
+              <label>Telefone para contato:</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="Ex: (16) 91234-5678" required>
+          </div>
+          <div class="question-group">
+              <label>Informações adicionais:</label>
+              <textarea name="mensagem" rows="5" placeholder="Descreva mais detalhes sobre o problema..."></textarea>
+          </div>
+          <button class="enviar" type="submit">Enviar</button>
+      </form>
+  </div>
+
+  
+    </div>
+</body>
+
+</html>
