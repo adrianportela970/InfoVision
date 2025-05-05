@@ -1,4 +1,4 @@
-@media (min-width:800px) {
+@media (min-width:736px) {
 
     body {
         align-items: center;
@@ -152,7 +152,7 @@
 
 
 
-@media (max-width:799px) {
+@media (max-width:735px) {
 
     body {
         font-family: "Lato", sans-serif;
