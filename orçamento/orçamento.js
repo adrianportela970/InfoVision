@@ -105,7 +105,7 @@ function enviarDados(event) {
         .then(response => response.json())
         .then(data => {
             if (data.status === 'sucesso') {
-                alert("Dados enviados com sucesso!");
+                alert("Dados enviados com sucesso!  Agradecemos sua confiança!");
                 event.target.reset();
             } else {
                 alert('Erro: ' + data.mensagem);
