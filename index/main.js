@@ -87,3 +87,22 @@ window.addEventListener('scroll', checkVisibility);
 
 // Verifica inicialmente (caso já esteja no viewport ao carregar)
 checkVisibility();
+
+document.addEventListener("DOMContentLoaded", function () {
+    const descdifElements = document.querySelectorAll('.descdif div');
+
+    function checkVisibility() {
+        descdifElements.forEach((element) => {
+            const rect = element.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Adiciona a classe quando o elemento estiver visível na tela
+            if (rect.top < windowHeight * 0.85) {
+                element.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Ativar para elementos já visíveis ao carregar a página
+});
